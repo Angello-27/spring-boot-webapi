@@ -1,0 +1,46 @@
+[17-08-2026] CI, Deploy
+
+
+Repositorio base:
+https://github.com/pablovillazon/spring-boot-webapi.git
+
+
+1.- Integracion de las pruebas unitarias en el CI
+CI: Todo lo visto en el workflow yml del repositorio
+
+JUnit + pruebas unitarias
+
+
+2.- Integracion del Code Coverage (JaCoCo) en el CI
+Jacoco - Libreria que permite revisar la cobertura del codigo (Code Coverage)
+- Agregar el plugin en el pom.xml
+- Ejecutar el commando:
+  # mvn -B test jacoco:report --file pom.xml
+Si se ejecuto sin error, revisar la carpeta generada target/site/jacoco/
+
+3.- Modificacion del pipeline
+
+Tarea
+
+PDF con capturas del pipeline ejecutado en GitHub Actions
+- Run tests with Maven
+- Run Code Coverage with Maven
+
+Captura del reporte de Jacoco de la PC local.
+
+Repositorios\webapi\target\site\jacoco\
+
+
+
+Tareas para proximas clases:
+
+1.- Virtual Machines con VirtualBox
+
+2.- Imagen: https://www.osboxes.org/ubuntu-server/
+
+3.- Docker Desktop
+
+4.- Cuenta en ngrok.org
+
+5.- Cuenta en Oracle Cloud Always Free
+
