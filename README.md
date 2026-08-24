@@ -46,7 +46,7 @@ target/site/jacoco/index.html
 
 ## Pipeline de CI (GitHub Actions)
 
-El workflow [`maven.yml`](.github/workflows/maven.yml) se ejecuta en cada `push` a `main`/`feature/**` y en cada `pull_request` a `main`, e incluye entre otros los siguientes pasos:
+El workflow [`maven.yml`](.github/workflows/maven.yml) se ejecuta en cada `push` a `master`/`feature/**` y en cada `pull_request` a `master`, e incluye entre otros los siguientes pasos:
 
 - **Run tests with Maven** — `mvn -B test --file pom.xml`
 - **Run Code Coverage with Maven** — `mvn -B verify --file pom.xml`
